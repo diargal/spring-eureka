@@ -1,7 +1,7 @@
-package com.formacionbdi.springboot.app.items.model.service;
+package com.formacionbdi.springboot.app.item.model.service;
 
-import com.formacionbdi.springboot.app.items.model.entity.Item;
-import com.formacionbdi.springboot.app.items.model.entity.Producto;
+import com.formacionbdi.springboot.app.item.model.entity.Item;
+import com.formacionbdi.springboot.app.item.model.entity.Producto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.*;
 import java.util.stream.Collectors;
 
-@Service
+@Service("serviceRestTemplate")
 public class ItemServiceImpl implements ItemService {
 
     @Autowired

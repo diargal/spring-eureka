@@ -1,4 +1,4 @@
-package com.formacionbdi.springboot.app.items.model.entity;
+package com.formacionbdi.springboot.app.item.model.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package com.formacionbdi.springboot.app.items;
+package com.formacionbdi.springboot.app.item;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
