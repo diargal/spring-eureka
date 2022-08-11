@@ -24,4 +24,7 @@ public class Producto implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date createAt;
 
+    @Transient //Atributo no persistente (no se almacena en BD).
+    private Integer port;
+
 }

@@ -1,4 +1,4 @@
-package com.formacionbdi.springboot.app.item.model.entity;
+package com.formacionbdi.springboot.app.item.model;
 
 import java.util.Date;
 
@@ -8,10 +8,6 @@ public class Producto {
     private String nombre;
     private Double precio;
     private Date createAt;
-    private Integer port;
-
-    public Producto() {
-    }
 
     public Producto(Long id, String nombre, Double precio, Date createAt, Integer port) {
         this.id = id;
@@ -20,6 +16,19 @@ public class Producto {
         this.createAt = createAt;
         this.port = port;
     }
+
+    public Producto() {
+    }
+
+    public Integer getPort() {
+        return port;
+    }
+
+    public void setPort(Integer port) {
+        this.port = port;
+    }
+
+    private Integer port;
 
     public Long getId() {
         return id;
@@ -53,11 +62,5 @@ public class Producto {
         this.createAt = createAt;
     }
 
-    public Integer getPort() {
-        return port;
-    }
 
-    public void setPort(Integer port) {
-        this.port = port;
-    }
 }
