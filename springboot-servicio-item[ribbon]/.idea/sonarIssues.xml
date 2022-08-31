@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-eureka-server/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/springboot-servicio-item/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/AppConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/springboot-servicio-item/src/main/java/com/formacionbdi/springboot/app/item/SpringbootServicioItemApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/springboot-servicio-item/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-productos/src/main/java/com/formacionbdi/springboot/app/productos/controller/ProductoController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-productos/src/main/java/com/formacionbdi/springboot/app/productos/models/service/IProductoService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-zuul-server-gradle/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-zuul-server-gradle/src/main/java/SpringbootServicioItemApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-zuul-server-gradle/src/main/java/com/formacionbdi/springboot/app/SpringbootServicioItemApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-zuul-server-gradle/src/main/java/main.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-zuul-server-gradle/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-servicio-zuul-server-gradle/src/test/java/com/formacionbdi/springboot/app/SpringbootServicioItemApplicationTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-zuul-server-spring/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-zuul-server-spring/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-zuul-server-spring/src/main/java/com/springboot/formacionbdi/springbootzuulserverspring/SpringbootZuulServerSpringApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springboot-zuul-server-spring/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
