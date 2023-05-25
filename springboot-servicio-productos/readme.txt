@@ -1,0 +1,1 @@
+** Para correr varias instancias, hay que configurar un application run en el que se le indica el puerto mediante -Dserver.port=8091 en las VM options. Esto con el fin de ayudar con el balanceo de carga.

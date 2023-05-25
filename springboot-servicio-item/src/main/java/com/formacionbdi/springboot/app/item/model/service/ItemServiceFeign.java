@@ -14,18 +14,18 @@ import java.util.stream.Collectors;
 @Primary //Indica que es la implementación a cargar por defecto. Forma 2
 public class ItemServiceFeign implements ItemService {
     @Autowired
-    private ProductoClienteRest productoClienteRest;
+    private ProductoClienteRest clientFeign;
 
     @Override
     public List<Item> findAll() {
-        return productoClienteRest.listar().stream()
+        return clientFeign.listar().stream()
                 .map(producto -> new Item(producto, 1))
                 .collect(Collectors.toList());
     }
 
     @Override
     public Item findById(Long id, Integer cantidad) {
-        Producto producto = productoClienteRest.detalle(id);
+        Producto producto = clientFeign.detalle(id);
 
         return new Item(producto, cantidad);
     }

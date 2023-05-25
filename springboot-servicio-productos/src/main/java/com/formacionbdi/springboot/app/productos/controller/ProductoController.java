@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @RestController
@@ -28,12 +29,10 @@ public class ProductoController {
 
     @GetMapping("/listar")
     public List<Producto> listar() {
-        return iProductoService.findAll().stream().map(
-                        producto -> {
-                            producto.setPort(Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port"))));
-                            //  producto.setPort(port);
-                            return producto;
-                        }
+        //Integer port = Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port")));
+
+        return iProductoService.findAll().stream().peek(
+                        producto -> producto.setPort(port)
                 )
                 .collect(Collectors.toList());
     }
@@ -41,15 +40,15 @@ public class ProductoController {
 
     @GetMapping("/ver/{id}")
     public Producto detalle(@PathVariable Long id) {
+        // Integer port = Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port")));
         Producto producto = iProductoService.findById(id);
-        producto.setPort(Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port"))));
-        //producto.setPort(port);
+        producto.setPort(port);
 
-        try {
+        /*try {
             Thread.sleep(2000l);
         } catch (InterruptedException e) {
             e.printStackTrace();
-        }
+        }*/
         return producto;
     }
 }
