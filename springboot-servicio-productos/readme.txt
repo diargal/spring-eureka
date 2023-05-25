@@ -1,1 +1,3 @@
 ** Para correr varias instancias, hay que configurar un application run en el que se le indica el puerto mediante -Dserver.port=8091 en las VM options. Esto con el fin de ayudar con el balanceo de carga.
+Si no tenemos configurados los puertos de manera aleatoria, lo anterior se debe hacer. Pero de lo contrario, se debe omitir. De esta maner server.port=${PORT:0} en el application.properties se automatiza la asignación
+aleatoria del puerto.
