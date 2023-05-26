@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
-@EnableEurekaClient
+@EnableEurekaClient //No es necesario expresarlo, solo con la dependecnia agregada bastaría.
 @EnableZuulProxy
 @SpringBootApplication
 public class SpringbootZuulServerSpringApplication {

@@ -22,14 +22,14 @@ public class ProductoController {
 
     //Se puede obtener el puerto mediante Environment o por @Value
     @Autowired
-    private Environment environment;
+    private Environment environment; //obtiene el puerto real del ambiente
 
-    @Value("${server.port}")
-    private Integer port;
+    /*@Value("${server.port}") //obtiene el puerto indicado en el properties
+    private Integer port;*/
 
     @GetMapping("/listar")
     public List<Producto> listar() {
-        //Integer port = Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port")));
+        Integer port = Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port")));
 
         return iProductoService.findAll().stream().peek(
                         producto -> producto.setPort(port)
@@ -40,7 +40,7 @@ public class ProductoController {
 
     @GetMapping("/ver/{id}")
     public Producto detalle(@PathVariable Long id) {
-        // Integer port = Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port")));
+        Integer port = Integer.parseInt(Objects.requireNonNull(environment.getProperty("local.server.port")));
         Producto producto = iProductoService.findById(id);
         producto.setPort(port);
 
