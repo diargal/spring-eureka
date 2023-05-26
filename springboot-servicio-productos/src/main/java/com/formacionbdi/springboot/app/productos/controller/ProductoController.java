@@ -44,12 +44,12 @@ public class ProductoController {
         Producto producto = iProductoService.findById(id);
         producto.setPort(port);
 
-        try {
+      /*  try {
             Thread.sleep(2000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        /*
+
         boolean ok = false;
         if (!ok) {
             throw new RuntimeException("No se pudo cargar el item");
