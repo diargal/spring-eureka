@@ -1,7 +1,7 @@
 plugins {
-    id 'org.springframework.boot' version '2.3.12.RELEASE'
-    id 'io.spring.dependency-management' version '1.0.9.RELEASE'
     id 'java'
+    id 'org.springframework.boot' version '2.7.12'
+    id 'io.spring.dependency-management' version '1.0.15.RELEASE'
 }
 
 group = 'com.arch'
@@ -19,7 +19,7 @@ repositories {
 }
 
 ext {
-    set('springCloudVersion', "Hoxton.SR12")
+    set('springCloudVersion', "2021.0.7")
 }
 
 dependencies {
@@ -28,9 +28,11 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
    // implementation 'org.springframework.cloud:spring-cloud-starter-netflix-ribbon' viene incluido en Eureka client
     implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+    //implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix' se implementará Resilience
     compileOnly 'org.projectlombok:lombok:1.18.24'
     annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    implementation 'org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j'
+    implementation 'org.springframework.boot:spring-boot-starter-bootstrap'
 }
 
 dependencyManagement {
